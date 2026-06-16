@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of a BCA student — showcasing projects, skills, and more." />
+  <title>Dev Portfolio | BCA Student</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+
+      <!-- Logo / Brand -->
+      <a href="#home" class="navbar__logo">
+        <span class="navbar__logo-bracket">&lt;</span>
+        VIVEK
+        <span class="navbar__logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="navbar__nav" aria-label="Primary navigation">
+        <ul class="navbar__nav-list">
+          <li><a class="navbar__nav-link" href="#home">Home</a></li>
+          <li><a class="navbar__nav-link" href="#about">About</a></li>
+          <li><a class="navbar__nav-link" href="#skills">Skills</a></li>
+          <li><a class="navbar__nav-link" href="#projects">Projects</a></li>
+          <li><a class="navbar__nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="navbar__hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="navbar__mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="navbar__mobile-list">
+        <li><a class="navbar__mobile-link" href="#home">Home</a></li>
+        <li><a class="navbar__mobile-link" href="#about">About</a></li>
+        <li><a class="navbar__mobile-link" href="#skills">Skills</a></li>
+        <li><a class="navbar__mobile-link" href="#projects">Projects</a></li>
+        <li><a class="navbar__mobile-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- =========================================================
+       HERO SECTION
+  ========================================================= -->
+  <section class="hero" id="home">
+    <div class="hero__container">
+
+      <!-- Background decorative grid (CSS-rendered) -->
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+
+      <!-- Floating accent blobs -->
+      <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <!-- Greeting Tag -->
+        
+
+        <!-- Headline -->
+        <h1 class="hero__heading">
+          I'm <span class="hero__name">Vivek</span>,<br />
+          <span class="hero__role" id="typed-role">BCA Student &amp; Developer</span>
+        </h1>
+
+        <!-- Sub-description -->
+        <p class="hero__description">
+          I build clean, functional, and visually engaging web experiences.
+          Currently pursuing BCA and turning curiosity into code — one project at a time.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero__cta-group">
+          <a href="#projects" class="btn btn--primary">
+            View Projects
+            <span class="btn__arrow">→</span>
+          </a>
+          <a href="#contact" class="btn btn--outline">
+            Contact Me
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="hero__socials">
+          <a href="https://github.com/Vivek-Dev654" class="hero__social-link" aria-label="GitHub" target="_blank" rel="noopener">
+            <!-- GitHub SVG Icon -->
+            <svg class="hero__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56v-2.04c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56C20.22 21.4 23.5 17.09 23.5 12 23.5 5.65 18.35.5 12 .5z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/vivek76685" class="hero__social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <!-- LinkedIn SVG Icon -->
+            <svg class="hero__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.56V9H3.56v11.45zM22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/>
+            </svg>
+          </a>
+          <a href="https://x.com/" class="hero__social-link" aria-label="Twitter / X" target="_blank" rel="noopener">
+            <!-- X (Twitter) SVG Icon -->
+            <svg class="hero__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.36 2h3.14l-6.86 7.84L22.5 22h-6.32l-4.95-6.47L5.6 22H2.45l7.34-8.39L1.5 2h6.48l4.47 5.84L18.36 2zm-1.1 18h1.74L6.83 3.74H4.97L17.26 20z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual / Illustration placeholder -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__code-window">
+          <div class="hero__code-header">
+            <span class="hero__dot hero__dot--red"></span>
+            <span class="hero__dot hero__dot--yellow"></span>
+            <span class="hero__dot hero__dot--green"></span>
+            <span class="hero__code-filename">portfolio.js</span>
+          </div>
+          <div class="hero__code-body">
+            <pre class="hero__code-block"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-key">name</span>: <span class="code-string">"Vivek"</span>,
+  <span class="code-key">degree</span>: <span class="code-string">"BCA (Final Year)"</span>,
+  <span class="code-key">skills</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>,
+           <span class="code-string">"JavaScript"</span>, <span class="code-string">"Python"</span>],
+  <span class="code-key">passion</span>: <span class="code-string">"Building cool stuff"</span>,
+  <span class="code-key">available</span>: <span class="code-bool">true</span>,
+};
+
+<span class="code-keyword">function</span> <span class="code-fn">hire</span>(dev) {
+  <span class="code-keyword">return</span> <span class="code-string">`Let's build together! 🚀`</span>;
+}</code></pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       ABOUT SECTION
+  ========================================================= -->
+  <section class="about" id="about">
+    <div class="about__container">
+
+      <!-- Section Heading -->
+      <div class="section-heading">
+        <span class="section-heading__tag"></span>
+        <h2 class="section-heading__title">About Me</h2>
+        <div class="section-heading__line"></div>
+      </div>
+
+      <div class="about__grid">
+
+        <!-- Profile Image / Avatar placeholder -->
+        <div class="about__image-wrapper">
+          <div class="about__avatar-placeholder" aria-label="Profile photo placeholder">
+            <img src="pic.jpg">
+          </div>
+          <div class="about__image-decoration" aria-hidden="true"></div>
+        </div>
+
+        <!-- About Text Content -->
+        <div class="about__content">
+          <h3 class="about__subtitle">Who am I?</h3>
+          <p class="about__text">
+            Hi! I'm <strong>Vivek</strong>, a passionate BCA student in my final year, 
+            driven by a love for technology and problem-solving. I enjoy crafting digital 
+            experiences that are both functional and visually pleasing.
+          </p>
+          <p class="about__text">
+            My journey started with curiosity — tinkering with HTML pages and writing 
+            simple Python scripts. Since then, I've grown into a developer who enjoys 
+            the full spectrum of web development, from designing clean UIs to building 
+            logical back-end structures.
+          </p>
+          <p class="about__text">
+            When I'm not coding, I'm exploring new technologies, contributing to 
+            open-source projects, or binge-reading tech blogs. I'm actively looking 
+            for internship opportunities to apply my skills in a real-world environment.
+          </p>
+
+          <!-- Quick Stats -->
+          <ul class="about__stats">
+            <li class="about__stat-item">
+              <span class="about__stat-number">5+</span>
+              <span class="about__stat-label">Projects</span>
+            </li>
+            <li class="about__stat-item">
+              <span class="about__stat-number">2</span>
+              <span class="about__stat-label">Years Coding</span>
+            </li>
+            <li class="about__stat-item">
+              <span class="about__stat-number">4+</span>
+              <span class="about__stat-label">Technologies</span>
+            </li>
+          </ul>
+
+          <!-- Resume Download Button -->
+          <a href="vivek_Resume.pdf" class="btn btn--primary about__resume-btn" download>
+            Download Resume
+            <span class="btn__arrow">↓</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       SKILLS SECTION
+  ========================================================= -->
+  <section class="skills" id="skills">
+    <div class="skills__container">
+
+      <!-- Section Heading -->
+      <div class="section-heading">
+        <span class="section-heading__tag"></span>
+        <h2 class="section-heading__title">My Skills</h2>
+        <div class="section-heading__line"></div>
+      </div>
+      
+
+      </div><!-- /.skills__categories -->
+
+      <!-- Tech Badge Tags -->
+      <div class="skills__tags" aria-label="Technology tags">
+        <span class="skills__tag">HTML</span>
+        <span class="skills__tag">CSS</span>
+        <span class="skills__tag">JavaScript</span>
+        <span class="skills__tag">Python</span>
+        <span class="skills__tag">React</span>
+        <span class="skills__tag">MySQL</span>
+        <span class="skills__tag">Git</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       PROJECTS SECTION
+  ========================================================= -->
+  <section class="projects" id="projects">
+    <div class="projects__container">
+
+      <!-- Section Heading -->
+      <div class="section-heading">
+        <span class="section-heading__tag"></span>
+        <h2 class="section-heading__title">My Projects</h2>
+        <div class="section-heading__line"></div>
+      </div>
+
+      <p class="projects__intro">
+        A collection of things I've built. Each project is a new lesson learned.
+      </p>
+
+      <!-- Filter Buttons -->
+      <div class="projects__filters" role="group" aria-label="Filter projects by category">
+        <button class="projects__filter-btn projects__filter-btn--active" data-filter="all">All</button>
+        <button class="projects__filter-btn" data-filter="web">Web</button>
+        <button class="projects__filter-btn" data-filter="python">Python</button>
+        <button class="projects__filter-btn" data-filter="database">Database</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects__grid">
+
+        <!-- Project Card 1 -->
+        <article class="project-card" data-category="web">
+          <div class="project-card__image-wrapper">
+            <div class="project-card__image-placeholder project-card__image-placeholder--1" aria-label="Project screenshot placeholder">
+              <span class="project-card__placeholder-text">🌐</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View E-commerce Website live">Live ↗</a>
+              <a href="https://github.com/Vivek-Dev654" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View E-commerce Website source code">Code ↗</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__category">Web</span>
+              <span class="project-card__year">2024</span>
+            </div>
+            <h3 class="project-card__title">E-Commerce Website</h3>
+            <p class="project-card__description">
+              A fully functional online store with product listings, cart functionality, 
+              and a checkout flow. Built with HTML, CSS, JavaScript, and PHP backend.
+            </p>
+            <ul class="project-card__tech-stack">
+              <li class="project-card__tech">HTML</li>
+              <li class="project-card__tech">CSS</li>
+              <li class="project-card__tech">PHP</li>
+              <li class="project-card__tech">MySQL</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card" data-category="python">
+          <div class="project-card__image-wrapper">
+            <div class="project-card__image-placeholder project-card__image-placeholder--2" aria-label="Project screenshot placeholder">
+              <span class="project-card__placeholder-text">🤖</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View Chatbot App live">Live ↗</a>
+              <a href="https://github.com/Vivek-Dev654" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View Chatbot App source code">Code ↗</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__category">Python</span>
+              <span class="project-card__year">2024</span>
+            </div>
+            <h3 class="project-card__title">AI Chatbot App</h3>
+            <p class="project-card__description">
+              A simple rule-based chatbot built using Python and NLTK. Capable of 
+              answering FAQs and holding basic conversations through a web interface.
+            </p>
+            <ul class="project-card__tech-stack">
+              <li class="project-card__tech">Python</li>
+              <li class="project-card__tech">NLTK</li>
+              <li class="project-card__tech">Flask</li>
+              <li class="project-card__tech">JS</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card" data-category="database">
+          <div class="project-card__image-wrapper">
+            <div class="project-card__image-placeholder project-card__image-placeholder--3" aria-label="Project screenshot placeholder">
+              <span class="project-card__placeholder-text">📚</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View Library Management System live">Live ↗</a>
+              <a href="https://github.com/Vivek-Dev654" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View Library Management System source code">Code ↗</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__category">Database</span>
+              <span class="project-card__year">2023</span>
+            </div>
+            <h3 class="project-card__title">Library Management System</h3>
+            <p class="project-card__description">
+              A CRUD-based library system to manage book records, members, and 
+              issue/return tracking. Built as a college mini-project.
+            </p>
+            <ul class="project-card__tech-stack">
+              <li class="project-card__tech">Python</li>
+              <li class="project-card__tech">MySQL</li>
+              <li class="project-card__tech">Tki
+                nter</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project Card 4 -->
+        <article class="project-card" data-category="web">
+          <div class="project-card__image-wrapper">
+            <div class="project-card__image-placeholder project-card__image-placeholder--4" aria-label="Project screenshot placeholder">
+              <span class="project-card__placeholder-text">📝</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View Blog Platform live">Live ↗</a>
+              <a href="https://github.com/Vivek-Dev654" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View Blog Platform source code">Code ↗</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__category">Web</span>
+              <span class="project-card__year">2023</span>
+            </div>
+            <h3 class="project-card__title">Personal Blog Platform</h3>
+            <p class="project-card__description">
+              A minimal blog site with a content management dashboard. Supports 
+              markdown-style posts, categories, and comment sections.
+            </p>
+            <ul class="project-card__tech-stack">
+              <li class="project-card__tech">HTML</li>
+              <li class="project-card__tech">CSS</li>
+              <li class="project-card__tech">Node.js</li>
+              <li class="project-card__tech">MongoDB</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project Card 5 -->
+        <article class="project-card" data-category="python">
+          <div class="project-card__image-wrapper">
+            <div class="project-card__image-placeholder project-card__image-placeholder--5" aria-label="Project screenshot placeholder">
+              <span class="project-card__placeholder-text">📊</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View Data Analyser live">Live ↗</a>
+              <a href="https://github.com/Vivek-Dev654" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View Data Analyser source code">Code ↗</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__category">Python</span>
+              <span class="project-card__year">2024</span>
+            </div>
+            <h3 class="project-card__title">Student Grade Analyser</h3>
+            <p class="project-card__description">
+              A data analysis tool that reads student CSV data and visualises 
+              performance trends using Matplotlib and Pandas.
+            </p>
+            <ul class="project-card__tech-stack">
+              <li class="project-card__tech">Python</li>
+              <li class="project-card__tech">Pandas</li>
+              <li class="project-card__tech">Matplotlib</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project Card 6 -->
+        <article class="project-card" data-category="web">
+          <div class="project-card__image-wrapper">
+            <div class="project-card__image-placeholder project-card__image-placeholder--6" aria-label="Project screenshot placeholder">
+              <span class="project-card__placeholder-text">🌦️</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View Weather App live">Live ↗</a>
+              <a href="https://github.com/Vivek-Dev654" class="project-card__overlay-link" target="_blank" rel="noopener" aria-label="View Weather App source code">Code ↗</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__category">Web</span>
+              <span class="project-card__year">2024</span>
+            </div>
+            <h3 class="project-card__title">Weather Dashboard App</h3>
+            <p class="project-card__description">
+              A real-time weather app that fetches data from a public API and 
+              displays current conditions and a 5-day forecast with clean UI.
+            </p>
+            <ul class="project-card__tech-stack">
+              <li class="project-card__tech">HTML</li>
+              <li class="project-card__tech">CSS</li>
+              <li class="project-card__tech">JavaScript</li>
+              <li class="project-card__tech">API</li>
+            </ul>
+          </div>
+        </article>
+
+      </div><!-- /.projects__grid -->
+
+      <!-- View All Button -->
+      <div class="projects__more">
+        <a href="https://github.com/Vivek-Dev654" class="btn btn--outline" target="_blank" rel="noopener">
+          View All on GitHub
+          <span class="btn__arrow">↗</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       CONTACT SECTION
+  ========================================================= -->
+  <section class="contact" id="contact">
+    <div class="contact__container">
+
+      <!-- Section Heading -->
+      <div class="section-heading">
+        <span class="section-heading__tag"></span>
+        <h2 class="section-heading__title">Get In Touch</h2>
+        <div class="section-heading__line"></div>
+      </div>
+
+      <p class="contact__intro">
+        I'm currently open to internship opportunities and collaborations. 
+        Whether you have a question, a project idea, or just want to say hi — 
+        my inbox is always open!
+      </p>
+
+      <div class="contact__grid">
+
+        <!-- Contact Info Panel -->
+        <aside class="contact__info">
+          <h3 class="contact__info-title">Contact Details</h3>
+
+          <ul class="contact__info-list">
+            <li class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">📧</span>
+              <div class="contact__info-text">
+                <span class="contact__info-label">Email</span>
+                <a href="mailto:sharmav76685@gmail.com.com" class="contact__info-value">sharmav76685@gmail.com</a>
+              </div>
+            </li>
+            <li class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">📍</span>
+              <div class="contact__info-text">
+                <span class="contact__info-label">Location</span>
+                <span class="contact__info-value">Kanpur, Uttar Pradesh, India</span>
+              </div>
+            </li>
+            <li class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">🎓</span>
+              <div class="contact__info-text">
+                <span class="contact__info-label">Education</span>
+                <span class="contact__info-value">BCA Final Year</span>
+              </div>
+            </li>
+            <li class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">💼</span>
+              <div class="contact__info-text">
+                <span class="contact__info-label">Status</span>
+                <span class="contact__info-value contact__status">
+                  <span class="contact__status-dot" aria-hidden="true"></span>
+                  Available for Internship
+                </span>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Social Links in Contact -->
+          <div class="contact__socials">
+            <a href="https://github.com/Vivek-Dev654" class="contact__social-btn" aria-label="GitHub" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/vivek76685" class="contact__social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://x.com/" class="contact__social-btn" aria-label="Twitter" target="_blank" rel="noopener">Twitter</a>
+          </div>
+        </aside>
+
+        <!-- Contact Form -->
+        <div class="contact__form-wrapper">
+          <!--
+            NOTE: This is an HTML-only structure.
+            Form submission logic is handled in script.js.
+            Connect to a backend or service like Formspree / EmailJS.
+          -->
+          <div class="contact__form" id="contact-form" novalidate>
+            
+            <!-- Form Row: Name + Email -->
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="contact-name">Your Name</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  placeholder="Name"
+                  autocomplete="name"
+                  required
+                />
+                <span class="form__error" id="name-error" role="alert"></span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="contact-email">Email Address</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+                <span class="form__error" id="email-error" role="alert"></span>
+              </div>
+            </div>
+
+            <!-- Subject -->
+            <div class="form__group">
+              <label class="form__label" for="contact-subject">Subject</label>
+              <input
+                class="form__input"
+                type="text"
+                id="contact-subject"
+                name="subject"
+                placeholder="Internship Opportunity / Project Collab"
+                required
+              />
+              <span class="form__error" id="subject-error" role="alert"></span>
+            </div>
+
+            <!-- Message -->
+            <div class="form__group">
+              <label class="form__label" for="contact-message">Message</label>
+              <textarea
+                class="form__textarea"
+                id="contact-message"
+                name="message"
+                rows="6"
+                placeholder="Hi Vivek, I'd love to connect about..."
+                required
+              ></textarea>
+              <span class="form__error" id="message-error" role="alert"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button class="btn btn--primary form__submit-btn" type="button" id="submit-btn">
+              Send Message
+              <span class="btn__arrow">→</span>
+            </button>
+
+            <!-- Success / Error Feedback -->
+            <div class="form__feedback" id="form-feedback" aria-live="polite"></div>
+
+          </div><!-- /#contact-form -->
+        </div><!-- /.contact__form-wrapper -->
+
+      </div><!-- /.contact__grid -->
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="footer">
+    <div class="footer__container">
+
+      <!-- Footer Top Row -->
+      <div class="footer__top">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <span class="navbar__logo-bracket">&lt;</span>Dev<span class="navbar__logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer__tagline">
+            Building the web, one commit at a time.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <h4 class="footer__nav-title">Quick Links</h4>
+          <ul class="footer__nav-list">
+            <li><a class="footer__nav-link" href="#home">Home</a></li>
+            <li><a class="footer__nav-link" href="#about">About</a></li>
+            <li><a class="footer__nav-link" href="#skills">Skills</a></li>
+            <li><a class="footer__nav-link" href="#projects">Projects</a></li>
+            <li><a class="footer__nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact Quick -->
+        <div class="footer__contact">
+          <h4 class="footer__nav-title">Reach Me</h4>
+          <p class="footer__contact-item">
+            <span aria-hidden="true">📧</span>
+            <a href="mailto:sharmav76685@gmail.com" class="footer__contact-link">sharmav76685@gmail.com.com</a>
+          </p>
+          <p class="footer__contact-item">
+            <span aria-hidden="true">📍</span>
+            Kanpur, UP, India
+          </p>
+          <!-- Footer Socials -->
+
+        </div>
+
+      </div><!-- /.footer__top -->
+
+      <!-- Footer Divider -->
+      <hr class="footer__divider" />
+
+      <!-- Footer Bottom Row -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="footer-year"></span> Vivek. All rights reserved.
+        </p>
+        <p class="footer__made-with">
+          Made with <span class="footer__heart" aria-label="love">❤️</span> and lots of ☕
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Back to top">↑</button>
+
+  <!-- External Script -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
