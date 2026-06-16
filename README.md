@@ -30,4 +30,4 @@ This is my personal portfolio website built using HTML, CSS, and JavaScript. It 
 
 ## 📞 Contact
 - LinkedIn: https://www.linkedin.com/in/vivek76685
-- Email: your-sharmav76685@gmail.com
+- Email:sharmav76685@gmail.com
