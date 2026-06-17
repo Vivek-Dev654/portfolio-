@@ -1,5 +1,5 @@
-# portfolio
-Personal portfolio built using HTML, CSS, and JavaScript.
+# Portfolio
+Personal Portfolio built using HTML, CSS, and JavaScript.
 
 # My Portfolio Website
 
